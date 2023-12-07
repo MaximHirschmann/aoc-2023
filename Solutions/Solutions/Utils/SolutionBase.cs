@@ -31,7 +31,7 @@ internal abstract class SolutionBase
         return inputFilePath;
     }
 
-    internal string[] ReadAllLines([CallerFilePath] string callerPath = "", string fileName = "input.txt")
+    internal string[] ReadAllLines(string fileName = "input.txt", [CallerFilePath] string callerPath = "")
     {
         string path = this.GetInputFilePath(callerPath, fileName);
 
